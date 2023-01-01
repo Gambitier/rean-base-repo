@@ -1,0 +1,33 @@
+{
+    "SystemIdentifier": "Service",
+    "Auth": {
+        "Authentication": "Custom",
+        "Authorization": "Custom"
+    },
+    "Database": {
+        "Type": "SQL",
+        "ORM": "Sequelize",
+        "Flavour": "MySQL"
+    },
+    "FileStorage": {
+        "Provider": "AWS-S3"
+    },
+    "TemporaryFolders": {
+        "Upload": "./tmp/resources/uploads/",
+        "Download": "./tmp/resources/downloads/",
+        "CleanupFolderBeforeMinutes": 10
+    },
+    "FormServiceProviders": [
+        {
+            "Provider": "KoboToolbox",
+            "Code": "KoboToolbox"
+        },
+        {
+            "Provider": "GoogleForms",
+            "Code": "GoogleForms"
+        }
+    ],
+    "MaxUploadFileSize": 104857600,
+    "JwtExpiresIn": 2592000,
+    "SessionExpiresIn": 2592000
+}
